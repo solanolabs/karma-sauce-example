@@ -1,0 +1,22 @@
+{
+  "name": "karma-sauce-demo",
+  "version": "0.0.0",
+  "description": "Demonstrates how to use karma and sauce",
+  "main": "karma.conf-ci.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start karma.conf-ci.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "karma": "^0.12.0",
+    "karma-sauce-launcher": "^0.2.2",
+    "karma-jasmine": "^0.2.2",
+    "karma-chrome-launcher": "^0.1.2",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-safari-launcher": "^0.1.1"
+  }
+}
