@@ -1,6 +1,8 @@
-# Karma-sauce-example
+# karma-sauce-example
 
 > An example of using the [Karma](http://karma-runner.github.io/0.12/index.html) test runner with Sauce Labs to run JavaScript unit tests.
+
+<a href="http://karma-runner.github.io/0.12/index.html"><img height="40" src="images/karma.png"></a>  [![sauce-labs](images/sauce-labs.png)](https://saucelabs.com)
 
 ## Getting Started
 
