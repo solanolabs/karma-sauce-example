@@ -2,3 +2,10 @@ language: node_js
 node_js:
 - '0.11'
 - '0.10'
+env:
+  global:
+  - secure: Blj0p9FY9hjuv7sJ09AIqEuVUwhyGpJ07e/vCek0qgp49EZfYQr3WV4ri3piRjBk6KBonqF20451aaNhZdH2XsV5L0wQzZtmxQOA7HMItQdTe2316bLbFi/dm/+eXAnNLuB6BljNnsxdozU2tufNri/06hkv4nIBNzNkkTYu54Q=
+  - secure: ATPm1G/BjugbgHaRy7uDAweoDc9icETovwTXWDDRAKCCIIzBPmv21xCWI/5AgLTy26OdhtHtHrOiHkFOC+pSVNJmdG+6APm53Os/irD2+xfqTrfU0LlS9hhJtwqtTtzAZKww/aGx9JPdgXqt7F2Nij0pXfXh2S/g0zvSDoeBCJI=
+before_script:
+    npm install -g karma
+    npm install
