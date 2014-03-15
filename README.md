@@ -13,10 +13,10 @@ To get started, clone the repo:
 git clone https://github.com/saucelabs/karma-sauce-example.git && cd karma-sauce-example
 ```
 
-Then run the following command to install the local node dependencies and the Karma command line interface globally:
+Then run the following command to install the Karma command line interface globally and this repo's local node dependencies:
 
 ```bash
-npm install && npm install -g karma-cli
+npm install -g karma-cli && npm install 
 ```
 
 *Note: make sure you have [node.js](http://nodejs.org/) installed before running the above command.* 
@@ -29,7 +29,7 @@ By default, this example runs tests in Chrome and Firefox on your local machine,
 
 ## Running Karma with the [karma-sauce-launcher](https://github.com/karma-runner/karma-sauce-launcher) plugin
 
-To use Karma with Sauce, create a `sauce.json` file with your Sauce Labs username and access key (if you don't have an account, you can sign up [here](https://saucelabs.com/signup/plan/free)). You can reference the `sauce-sample.json` in the repo to see the format. The provided `karma.conf-ci.js` file reads the `sauce.json` file and gets your private sauce access key, so `sauce.json` is ignored in the git repo.
+To use Karma with Sauce, add your Sauce Labs username and access key to the `sauce.json` file (if you don't have an account, you can sign up [here](https://saucelabs.com/signup/plan/free)).
 
 You can now run the unit tests on Sauce with the `karma start karma.conf-ci.js` command. Note that this will by default start [Sauce Connect](https://saucelabs.com/docs/connect) to establish a secure tunnel between your local machine and Sauce's cloud. To speed up the time it takes to connect to Sauce's cloud, you can start Sauce Connect in the background by using one of the [binaries](https://saucelabs.com/docs/connect) or the [Mac app](https://saucelabs.com/mac).
 
