@@ -4,7 +4,7 @@
 
 ![sauce-labs-loves-karma](images/sauce-loves-karma.png)
 
-[![Build Status](https://travis-ci.org/saucelabs/karma-sauce-example.png?branch=master)](https://travis-ci.org/saucelabs/karma-sauce-example)
+[![david-dm-status-badge](https://david-dm.org/saucelabs/karma-sauce-example/dev-status.png)](https://david-dm.org/saucelabs/karma-sauce-example#info=devDependencies&view=table)
 ## Getting Started
 
 To get started, clone the repo:
@@ -41,4 +41,5 @@ The provided `karma.conf-ci.js` file already is set up to read environment varia
 
 ### Example CI integration
 
-This repo integrates with Travis as an example and you can look at the builds [here](https://travis-ci.org/saucelabs/karma-sauce-example).
+This repo usses Travis for CI. Here is a status badge which shows the status of master:
+[![Build Status](https://travis-ci.org/saucelabs/karma-sauce-example.png?branch=master)](https://travis-ci.org/saucelabs/karma-sauce-example)
