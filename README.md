@@ -4,6 +4,7 @@
 
 ![sauce-labs-loves-karma](images/sauce-loves-karma.png)
 
+[![Build Status](https://travis-ci.org/saucelabs/karma-sauce-example.png?branch=master)](https://travis-ci.org/saucelabs/karma-sauce-example)
 ## Getting Started
 
 To get started, clone the repo:
