@@ -41,5 +41,5 @@ The provided `karma.conf-ci.js` file already is set up to read environment varia
 
 ### Example CI integration
 
-This repo usses Travis for CI. Here is a status badge which shows the status of master:
+This repo uses Travis for CI. Here is a status badge which shows the build status of master and links to the latest build:
 [![Build Status](https://travis-ci.org/saucelabs/karma-sauce-example.png?branch=master)](https://travis-ci.org/saucelabs/karma-sauce-example)
