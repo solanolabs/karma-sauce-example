@@ -18,7 +18,7 @@ Then run the following command to install the local node dependencies and the Ka
 npm install && npm install -g karma-cli
 ```
 
-*Note: make sure you have [node.js](http://nodejs.org/) installed.* 
+*Note: make sure you have [node.js](http://nodejs.org/) installed before running the above command.* 
 
 ## Running Karma locally
 
@@ -30,8 +30,8 @@ By default, this example runs tests in Chrome and Firefox on your local machine,
 
 To use Karma with Sauce, create a `sauce.json` file with your Sauce Labs username and access key (if you don't have an account, you can sign up [here](https://saucelabs.com/signup/plan/free)). You can reference the `sampleSauce.json` in the repo to see the format. The provided `karma.conf-ci.js` file reads the `sauce.json` file and gets your private sauce credentials, so `sauce.json` is ignored in the git repo.
 
-### Using the karma-sauce-launcher on CI
+### Using the karma-sauce-launcher in CI
 
-It is cool to run Sauce locally while you develop, but even cooler to run with a Continuous Integration system on every commit to your codebase. To integrate your CI system with Sauce check out the instructions for [Travis](http://saucelabs.com/opensource/travis), [Jenkins](http://saucelabs.com/jenkins), or [Bamboo](http://saucelabs.com/bamboo).
+It is cool to run Sauce locally while you develop, but even cooler to run in a Continuous Integration system on every commit to your codebase. To integrate your CI system with Sauce check out the instructions for [Travis](http://saucelabs.com/opensource/travis), [Jenkins](http://saucelabs.com/jenkins), or [Bamboo](http://saucelabs.com/bamboo).
 
-The provided `karma.conf-ci.js` file already is setup to read environment variables on CI, so you shouldn't need to modify it to run Sauce with your CI system.
+The provided `karma.conf-ci.js` file already is set up to read environment variables on CI, so you shouldn't need to modify it to run Sauce with your CI system as long as the `process.env.SAUCE_USERNAME` and `process.env.SAUCE_ACCESS_KEY` are set properly.
