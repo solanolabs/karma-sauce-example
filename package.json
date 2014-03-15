@@ -8,7 +8,7 @@
     "postInstall": "cp sauce-sample.json sauce.json"
   },
   "author": "Sauce Labs",
-  "license": "ISC",
+  "license": "Apache V2",
   "devDependencies": {
     "karma": "^0.12.0",
     "karma-sauce-launcher": "^0.2.2",
