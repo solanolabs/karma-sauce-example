@@ -8,3 +8,5 @@ env:
   - secure: ATPm1G/BjugbgHaRy7uDAweoDc9icETovwTXWDDRAKCCIIzBPmv21xCWI/5AgLTy26OdhtHtHrOiHkFOC+pSVNJmdG+6APm53Os/irD2+xfqTrfU0LlS9hhJtwqtTtzAZKww/aGx9JPdgXqt7F2Nij0pXfXh2S/g0zvSDoeBCJI=
 before_script:
     npm install -g karma-cli
+notifications:
+  email: false
