@@ -1,8 +1,8 @@
 # karma-sauce-example
 
-> An example of using the [Karma](http://karma-runner.github.io/0.12/index.html) test runner with Sauce Labs to run JavaScript unit tests.
+> An example of using the [Karma](http://karma-runner.github.io/0.12/index.html) test runner with [Sauce Labs](https://saucelabs.com)' browser cloud to run JavaScript unit tests.
 
-[![sauce-labs-loves-karma](images/sauce-loves-karma.png)](https://saucelabs.com)
+![sauce-labs-loves-karma](images/sauce-loves-karma.png)
 
 ## Getting Started
 
@@ -32,6 +32,6 @@ To use Karma with Sauce, create a `sauce.json` file with your Sauce Labs usernam
 
 ### Using the karma-sauce-launcher on CI
 
-It is cool to run Sauce locally while you develop, but even cooler to run with a Continuous Integration system on every commit to your codebase. To integrate your CI system with Sauce check out the instructions for [Travis CI](http://saucelabs.com/opensource/travis), [Jenkins](http://saucelabs.com/jenkins), or [Bamboo](http://saucelabs.com/bamboo).
+It is cool to run Sauce locally while you develop, but even cooler to run with a Continuous Integration system on every commit to your codebase. To integrate your CI system with Sauce check out the instructions for [Travis](http://saucelabs.com/opensource/travis), [Jenkins](http://saucelabs.com/jenkins), or [Bamboo](http://saucelabs.com/bamboo).
 
 The provided `karma.conf-ci.js` file already is setup to read environment variables on CI, so you shouldn't need to modify it to run Sauce with your CI system.
