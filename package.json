@@ -1,15 +1,12 @@
 {
-  "name": "karma-sauce-demo",
+  "name": "karma-sauce-example",
   "version": "0.0.0",
-  "description": "Demonstrates how to use karma and sauce",
+  "description": "An example of using the Karma test runner with Sauce Labs' browser cloud to run JavaScript unit tests",
   "main": "karma.conf-ci.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "karma start karma.conf-ci.js"
   },
-  "author": "",
+  "author": "Sauce Labs",
   "license": "ISC",
   "devDependencies": {
     "karma": "^0.12.0",
