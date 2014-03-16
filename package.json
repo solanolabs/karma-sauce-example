@@ -5,7 +5,7 @@
   "main": "karma.conf-ci.js",
   "scripts": {
     "test": "karma start karma.conf-ci.js",
-    "postinstall": "cp sauce-sample.json sauce.json"
+    "postinstall": "node install.js"
   },
   "author": "Sauce Labs",
   "license": "Apache V2",
