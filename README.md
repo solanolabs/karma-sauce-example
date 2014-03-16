@@ -23,7 +23,7 @@ npm install -g karma-cli && npm install
 
 ## Running Karma locally
 
-You then can run Karma locally to see how it works with the `karma start` command. Try saving a source file in the `src` folder or a test file in the `test` folder to see Karma automatically re-run the test files on the latest source code. 
+You then can run Karma locally to see how it works with the `karma start` command. Try saving a source file in the `src` folder or a test file in the `test` folder to see Karma automatically re-run the tests on the latest source code. 
 
 By default, this example runs tests in Chrome and Firefox on your local machine, and you can add more browsers that you have installed in the `karma.conf.js`'s `browsers` array.
 
@@ -31,15 +31,17 @@ By default, this example runs tests in Chrome and Firefox on your local machine,
 
 To use Karma with Sauce, add your Sauce Labs username and access key to the `sauce.json` file (if you don't have an account, you can sign up [here](https://saucelabs.com/signup/plan/free)).
 
-You can now run the unit tests on Sauce with the `karma start karma.conf-ci.js` command. Note that this will by default start [Sauce Connect](https://saucelabs.com/docs/connect) to establish a secure tunnel between your local machine and Sauce's cloud. To speed up the time it takes to connect to Sauce's cloud, you can start Sauce Connect in the background by using one of the [binaries](https://saucelabs.com/docs/connect) or the [Mac app](https://saucelabs.com/mac) and then settings the `startConnect` option to `false` in the `karma.conf.js` file.
+You can now run the unit tests on Sauce with the `karma start karma.conf-ci.js` command. Note that this will by default start [Sauce Connect](https://saucelabs.com/docs/connect) to establish a secure tunnel between your local machine and Sauce's cloud. To speed up the time it takes to connect to Sauce's cloud, you can start Sauce Connect in the background by using one of the [binaries](https://saucelabs.com/docs/connect) or the [Mac app](https://saucelabs.com/mac) and then setting the `startConnect` option to `false` in the `karma.conf.js` file (make sure to change it back to `true` before running on CI).
 
 ## Using the karma-sauce-launcher in CI
 
 It is cool to run your unit tests on Sauce locally while you develop, but even cooler to run them on a continuous integration system with every commit to your codebase. To integrate your CI with Sauce check out the instructions for [Travis](http://saucelabs.com/opensource/travis), [Jenkins](http://saucelabs.com/jenkins), or [Bamboo](http://saucelabs.com/bamboo).
 
-The provided `karma.conf-ci.js` file already is set up to read environment variables on CI, so you shouldn't need to modify it to run Sauce with your CI system as long as the `process.env.SAUCE_USERNAME` and `process.env.SAUCE_ACCESS_KEY` are set properly.
+The provided `karma.conf-ci.js` file already is set up to read environment variables on CI so you shouldn't need to modify it to run Sauce with your CI system as long as the `process.env.SAUCE_USERNAME` and `process.env.SAUCE_ACCESS_KEY` are set properly.
 
 ### Example CI integration
 
 This repo demonstrates using Sauce with Travis CI. Here is a status badge which shows the build status of this repo's master branch and links to the latest build:
 [![Build Status](https://travis-ci.org/saucelabs/karma-sauce-example.png?branch=master)](https://travis-ci.org/saucelabs/karma-sauce-example)
+
+*Note: the build is failing on purpose as a demo of Sauce catching bugs in different browsers.*
