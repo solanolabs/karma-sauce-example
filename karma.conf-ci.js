@@ -91,7 +91,7 @@ module.exports = function(config) {
       // Change this value if you are using a different CI than Travis
       build: process.env.TRAVIS_JOB_ID
     },
-
+    captureTimeout: 120000,
     customLaunchers: customLaunchers,
 
     // start these browsers
