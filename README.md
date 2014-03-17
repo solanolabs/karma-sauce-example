@@ -25,7 +25,7 @@ npm install -g karma-cli && npm install
 
 You then can run Karma locally to see how it works with the `karma start` command. Try saving a source file in the `src` folder or a test file in the `test` folder to see Karma automatically re-run the tests on the latest source code. 
 
-By default, this example runs tests in Chrome and Firefox on your local machine, and you can add more browsers that you have installed in the `karma.conf.js`'s `browsers` array.
+By default, this example runs [jasmine](http://jasmine.github.io/2.0/introduction.html) tests in Chrome and Firefox on your local machine, and you can add more browsers that you have installed in the `karma.conf.js`'s `browsers` array.
 
 ## Running Karma with the [karma-sauce-launcher](https://github.com/karma-runner/karma-sauce-launcher) plugin
 
