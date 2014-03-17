@@ -1,6 +1,6 @@
 # karma-sauce-example
 
-> An example of using the [Karma](http://karma-runner.github.io/0.12/index.html) test runner with [Sauce Labs](https://saucelabs.com)' browser cloud to run JavaScript unit tests.
+> An example of using the [Karma](http://karma-runner.github.io/) test runner with [Sauce Labs](https://saucelabs.com)' browser cloud to run JavaScript unit tests.
 
 ![sauce-labs-loves-karma](images/sauce-loves-karma.png)
 
