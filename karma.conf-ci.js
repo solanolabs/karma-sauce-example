@@ -84,12 +84,7 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
 
     sauceLabs: {
-      username: process.env.SAUCE_USERNAME,
-      accessKey: process.env.SAUCE_ACCESS_KEY,
-      testName: 'Karma and Sauce Labs demo',
-      startConnect: true,
-      // Change this value if you are using a different CI than Travis
-      build: process.env.TRAVIS_JOB_ID
+      testName: 'Karma and Sauce Labs demo'
     },
     captureTimeout: 120000,
     customLaunchers: customLaunchers,
