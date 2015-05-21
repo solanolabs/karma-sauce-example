@@ -22,7 +22,7 @@ module.exports = function(config) {
     'SL_Firefox': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
-      version: '9'
+      version: '10'
     }
   };
 
