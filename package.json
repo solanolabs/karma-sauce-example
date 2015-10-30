@@ -4,7 +4,7 @@
   "description": "An example of using the Karma test runner with Sauce Labs' browser cloud to run JavaScript unit tests",
   "main": "karma.conf-ci.js",
   "scripts": {
-    "test": "karma start karma.conf-ci.js",
+    "test": "karma start karma.conf-solano.js",
     "postinstall": "node install.js"
   },
   "author": "Sauce Labs",

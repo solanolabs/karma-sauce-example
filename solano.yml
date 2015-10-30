@@ -1,0 +1,23 @@
+# Use `solano config:add` to set sensitive environment variables.
+# See http://docs.solanolabs.com/Setup/setting-environment-variables/#via-config-variables
+# environment:
+#   'SAUCE_USERNAME': '<value>'
+#   'SAUCE_ACCESS_KEY': '<value>'
+
+nodejs:
+  version: '0.12.4'
+
+hooks:
+  pre_setup: |
+    set -o errexit -o pipefail
+    npm install karma-cli
+    npm install
+    wget https://saucelabs.com/downloads/sc-latest-linux.tar.gz
+    tar -xzf sc-latest-linux.tar.gz
+  worker_setup: |
+    # Start SauceConnect
+    (cd sc-*-linux && ./bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY) &
+    sleep 4
+
+tests:
+  - npm test

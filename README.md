@@ -4,7 +4,8 @@
 
 ![sauce-labs-loves-karma](images/sauce-loves-karma.png)
 
-[![david-dm-status-badge](https://david-dm.org/saucelabs/karma-sauce-example/dev-status.png)](https://david-dm.org/saucelabs/karma-sauce-example#info=devDependencies&view=table)
+[![](https://ci.solanolabs.com:443/isaac2/karma-sauce-example/badges/branches/master?badge_token=457b3ea49708e6d368c12f2d8c367d0cf6d4bf6b)](https://ci.solanolabs.com:443/isaac2/karma-sauce-example/suites/329868)
+
 ## Getting Started
 
 To get started, clone the repo:
